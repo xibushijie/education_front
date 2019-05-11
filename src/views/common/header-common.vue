@@ -54,6 +54,9 @@ export default {
 };
 </script>
 <style scoped>
+.el-menu--horizontal>.el-menu-item.is-active {
+    color: #409EFF;
+}
 .el-menu.el-menu--horizontal {
     border-bottom: 0;
 }
