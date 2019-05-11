@@ -33,32 +33,32 @@ export default {
 <style scoped>
 .nav li a {
   float: left;
-  color: #fff;
+  color: #000;
   height: 55px;
   line-height: 55px;
   cursor: pointer;
   width: 107px;
   text-align: center;
-  
 }
 .nav li:hover a {
   background-color: #3f3f3f;
+  color: #fff;
 }
-.nav li:active a {
+.nav li a:focus {
   background-color: #3f3f3f;
+  color: #fff;
 }
 .header {
   width: 100%;
   height: 55px;
-  background: #000;
   font-size: 16px;
 }
 
 .header-menu h1 {
   float: left;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-right: 200px;
-  color: #fff;
+  color: #23794a;
   font-size: 20px;
 }
 .search-hide {
