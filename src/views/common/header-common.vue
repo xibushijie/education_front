@@ -1,16 +1,39 @@
 <template>
-    <div class="header">
-        <div class="header-menu container">
-			<h1>教育教学软件</h1>
-            <div class="nav">
-                <li> <a href="#">首页</a></li>
-                <li> <a href="#">课程学习</a></li>
-                <li> <a href="#">错题本</a></li>
-                <li> <a href="#">案例展示</a></li>
-                <li> <a href="#">关于我们</a></li>
-            </div>
-        </div>
+  <div class="header">
+    <div class="header-menu container">
+      <h1>教育教学软件</h1>
+      <el-menu
+        :default-active="activeIndex"
+        class="el-menu-demo nav"
+        mode="horizontal"
+        @select="handleSelect"
+      >
+        <el-menu-item index="1">首页</el-menu-item>
+        <el-menu-item index="2">课程学习</el-menu-item>
+        <el-menu-item index="3">错题本</el-menu-item>
+        <el-menu-item index="4">案例展示</el-menu-item>
+        <el-menu-item index="5">关于我们</el-menu-item>
+        
+      </el-menu>
+      <!-- <div class="nav">
+        <li>
+          <a href="#">首页</a>
+        </li>
+        <li>
+          <a href="#">课程学习</a>
+        </li>
+        <li>
+          <a href="#">错题本</a>
+        </li>
+        <li>
+          <a href="#">案例展示</a>
+        </li>
+        <li>
+          <a href="#">关于我们</a>
+        </li>
+      </div> -->
     </div>
+  </div>
 </template>
 
 <script>
@@ -31,6 +54,12 @@ export default {
 };
 </script>
 <style scoped>
+.el-menu.el-menu--horizontal {
+    border-bottom: 0;
+}
+.nav {
+    float:left;
+}
 .nav li a {
   float: left;
   color: #000;
@@ -50,8 +79,9 @@ export default {
 }
 .header {
   width: 100%;
-  height: 55px;
+  height: 60px;
   font-size: 16px;
+  margin: 10px 0;
 }
 
 .header-menu h1 {
