@@ -1,0 +1,72 @@
+<template>
+    <div class="header">
+        <div class="header-menu container">
+			<h1>教育教学软件</h1>
+            <div class="nav">
+                <li> <a href="#">首页</a></li>
+                <li> <a href="#">课程学习</a></li>
+                <li> <a href="#">错题本</a></li>
+                <li> <a href="#">案例展示</a></li>
+                <li> <a href="#">关于我们</a></li>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+  name: "header-common",
+  data() {
+    return {
+      showSearch: false,
+      login: false,
+      input: "",
+      activeIndex: "0",
+      activeIndex2: "0"
+    };
+  },
+  mounted() {},
+
+  methods: {}
+};
+</script>
+<style scoped>
+.nav li a {
+  float: left;
+  color: #fff;
+  height: 55px;
+  line-height: 55px;
+  cursor: pointer;
+  width: 107px;
+  text-align: center;
+  
+}
+.nav li:hover a {
+  background-color: #3f3f3f;
+}
+.nav li:active a {
+  background-color: #3f3f3f;
+}
+.header {
+  width: 100%;
+  height: 55px;
+  background: #000;
+  font-size: 16px;
+}
+
+.header-menu h1 {
+  float: left;
+  margin-top: 10px;
+  margin-right: 200px;
+  color: #fff;
+  font-size: 20px;
+}
+.search-hide {
+  position: absolute;
+  right: 60px;
+}
+.search-show {
+  position: absolute;
+  right: 100px;
+}
+</style>
