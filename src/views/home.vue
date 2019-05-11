@@ -46,25 +46,31 @@
             </el-row>
             <div class="benList-box">
                 <el-row class="f-tac f-fs16 benList">
+                    <a href="javascript:#;">
                     <el-col :span="8" class="f-tal">课堂名称</el-col>
                     <el-col :span="8">
                         <div class="grid-content bg-purple-light">题目</div>
                     </el-col>
                     <el-col :span="8">做题时间</el-col>
+                    </a>
                 </el-row>
                 <el-row class="f-tac f-fs16 benList">
+                    <a href="javascript:#;">
                     <el-col :span="8" class="f-tal">课堂名称</el-col>
                     <el-col :span="8">
                         <div class="grid-content bg-purple-light">题目</div>
                     </el-col>
                     <el-col :span="8">做题时间</el-col>
+                    </a>
                 </el-row>
                 <el-row class="f-tac f-fs16 benList">
+                    <a href="javascript:#;">
                     <el-col :span="8" class="f-tal">课堂名称</el-col>
                     <el-col :span="8">
                         <div class="grid-content bg-purple-light">题目</div>
                     </el-col>
                     <el-col :span="8">做题时间</el-col>
+                    </a>
                 </el-row>
             </div>
         </div>
@@ -85,6 +91,12 @@ export default {
 <style scoped>
 .benList-box {
     margin-bottom: 55px;
+}
+.benList-box .el-row a {
+    color: #000;
+}
+.benList-box .el-row a:focus {
+    color: #409EFF;
 }
 .benList div {
     height: 50px;
